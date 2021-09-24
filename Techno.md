@@ -36,7 +36,8 @@
 
 
 
-
+# (2021-GT-DC-001) 급변하는 자동차 제조산업과 소프트웨어 중심 전략
+https://www.gtonline.or.kr/kor/data/issue/dataView.do?cPage=1&sch_national_cd=&sch_report_gbn_cd=&sch_tech_1st_gbn_cd=&sch_tech_2nd_gbn_cd=&searchField=&keyword=&data_sid=236820
 
 
 

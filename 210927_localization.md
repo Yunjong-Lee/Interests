@@ -10,8 +10,11 @@
       → 여기서 은닉된 상태(hidden state)라 함은 관찰된 값은 있지만 어느 상태에서 해당 값이 관찰됐 는지는 알지 못함을 의미 
       
     ![img](http://fulltext.earticle.net/Data/Org/108/Content/2019/vol_5540/KITS-18-5-156_F3.gif)  
-    
-    ![img](http://fulltext.earticle.net/Data/Org/108/Content/2019/vol_5540/KITS-18-5-156_F4.gif)
+    <Fig. 3> Hidden Markov Model  
+      
+        
+    ![img](http://fulltext.earticle.net/Data/Org/108/Content/2019/vol_5540/KITS-18-5-156_F4.gif)  
+    <Fig. 4> State transition of the HMM  
     
     - 장점  
       → 실내환경의 경우, RF 측정치의 잠음 수준이 매우 크고, 전파의 직진성 보장이 어렵기 때문에(multipath propagation) 삼각측량 보다 많이 이용됨 

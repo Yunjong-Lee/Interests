@@ -5,6 +5,14 @@
   + RF 신호의 감쇄 기반 거리 측정  
   + 핑거프린팅  
     - 서비스 지역에서 미리 임의로 여러 개의 위치를 선정하고 선정한 위치에서 수집한 신호 세기 정보를 DB화하여 matching을 통한 위치를 추정하는 방법  
+    - HMM(Hidden Markov Model)으로 표현 가능  
+      → 과거의 측위 결과를 반영하여 현재의 위치 측위 정확도를 향상시키는 기법  
+      → 여기서 은닉된 상태(hidden state)라 함은 관찰된 값은 있지만 어느 상태에서 해당 값이 관찰됐 는지는 알지 못함을 의미 
+      
+    ![img](http://fulltext.earticle.net/Data/Org/108/Content/2019/vol_5540/KITS-18-5-156_F3.gif)  
+    
+    ![img](http://fulltext.earticle.net/Data/Org/108/Content/2019/vol_5540/KITS-18-5-156_F4.gif)
+    
     - 장점  
       → 실내환경의 경우, RF 측정치의 잠음 수준이 매우 크고, 전파의 직진성 보장이 어렵기 때문에(multipath propagation) 삼각측량 보다 많이 이용됨 
     - 단점  

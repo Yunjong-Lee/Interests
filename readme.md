@@ -1,7 +1,5 @@
 # 문법  
-https://eungbean.github.io/2018/06/11/How-to-use-markdown/
-
-<example.com/> & <example@example.com>  
+<https://eungbean.github.io/2018/06/11/How-to-use-markdown/>
 
 1 문단 (Paragraph)
 

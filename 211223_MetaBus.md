@@ -1,4 +1,4 @@
-# ICT Global Market Analysis | 품목별 ICT 시장동향 | 메타버스, * 정보통신산업진흥원 *  
+# ICT Global Market Analysis | 품목별 ICT 시장동향 | 메타버스, *정보통신산업진흥원*  
 
 
 
@@ -31,7 +31,9 @@
 
 
 
-
+>시장이슈
+>>몰입형 경험 제공을 위한 VR headset 개발(Apple, 헤드셋 출시계획)
+>>로블록스 진출(구찌, 나이키 등)  
 
 
 

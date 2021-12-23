@@ -1,4 +1,4 @@
-# ICT Global Market Analysis 품목별 ICT 시장동향, 메타버스, 정보통신산업진흥원  
+# ICT Global Market Analysis | 품목별 ICT 시장동향 | 메타버스, *정보통신산업진흥원  
 
 
 

@@ -1,7 +1,7 @@
+# 문법  
+https://eungbean.github.io/2018/06/11/How-to-use-markdown/
 
-
-
-
+<example.com/> & <example@example.com>  
 
 1 문단 (Paragraph)
 
@@ -27,11 +27,11 @@
 -,+,\*을 사용해 기호 목록 생성, 계층별로 나누고 싶으면 tab을 삽입
 
 8 링크 (Link)
-8.1 외부 링크 (External Link)
-인라인 링크 : [링크](http://example.com"링크 제목")
-참조 링크 : [링크1][1] & [1]: http://example1.com/ "링크제목1"
-URL 링크 : <example.com/> & <example@example.com>
-8.2 내부 링크 (Internal Link)
+8.1 외부 링크 (External Link)  
+인라인 링크 : [링크](http://example.com"링크 제목")  
+참조 링크 : [링크1][1] & [1]: http://example1.com/ "링크제목1"  
+URL 링크 : <example.com/> & <example@example.com>  
+8.2 내부 링크 (Internal Link)  
 
 9 표 (Table)  
 9.2 표의 정렬 (Alignment)  
@@ -41,15 +41,15 @@ URL 링크 : <example.com/> & <example@example.com>
 | -------- | :------: | -------- | -------- |  
 | No span  | Span across three columns    |||  
 
-10 이미지 (Image) : `![이미지 이름](이미지 주소)`
+10 이미지 (Image) : `![이미지 이름](이미지 주소)`  
 
-11 이스케이프(Backslash Escape) : \\
+11 이스케이프(Backslash Escape) : \\  
 마크다운 작성 중 \*이나 \_ 을 사용하고 싶은 경우, 해당 기호 앞에 \\를 삽입  
 
-12 주석 : \\<!-- & -->
+12 주석 : \\<!-- & -->  
 
-13 목차 생성 : \{:toc}
-4. 각주 : [\^myfootnote]
+13 목차 생성 : \{:toc}  
+4. 각주 : [\^myfootnote]  
 
 
 

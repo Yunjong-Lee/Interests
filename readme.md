@@ -44,6 +44,8 @@ public class BootSpringBootApplication {
 ### 8 링크 (Link)  
 8.1 외부 링크 (External Link)  
 인라인 링크 : [링크](http://example.com"링크 제목")  
+[연습](http://www.naver.com)  
+
 참조 링크 : [링크1][1] & [1]: http://example1.com/ "링크제목1"  
 URL 링크 : <example.com/> & <example@example.com>  
 8.2 내부 링크 (Internal Link)  

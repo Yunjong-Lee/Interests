@@ -1,4 +1,15 @@
-### 1. LTE Cell 탐색 절차  
+목차  
+[1. LTE](##1-LTE)  
+[1.1. PHYSICAL LAYER](###1.1.-PHYSICAL-LAYER)  
+[1.2. LOGICAL LAYER](###1.2.-LOGICAL-LAYER)  
+[1.3. LTE Cell 탐색 절차](###1.3.-LTE-Cell-탐색-절차)  
+[2. 5G](#2.-5G)  
+
+- - -
+## 1. LTE  
+### 1.1. PHYSICAL LAYER  
+### 1.2. LOGICAL LAYER  
+### 1.3. LTE Cell 탐색 절차  
 - 무선단말의 셀 탐색(셀 ID,동기화 등)을 위해 2가지 신호가 전송됨  
   ㄴ. 셀 탐색과정의 복잡성을 감소시키는 목적으로 2가지 신호를 사용  
   ㄴ. Primary Synchronization Signal (PSS)와 Secondary Synchronization Signal (SSS)  

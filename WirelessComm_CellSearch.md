@@ -20,12 +20,12 @@
 
 ![img](https://t1.daumcdn.net/cfile/tistory/1624824750406F1E38)  
 
-  + BCH는 2-slot의 한가운데 72개의 부반송파에 걸쳐 전송되는데 이때 사용되는 72개의 부반송파는 PDSCH전송에 사용될 수 없다. 
-    ㄴ. BCH를 72개로 제한하는 이유: LTE에서 지원하는 가장 작은 대역폭은 1.4Mhz인데 이 때 사용되는 부반송파(RB, 6개)가 72개이다.   
+  + BCH는 2-slot의 한가운데 72개의 부반송파에 걸쳐 전송되는데 이때 사용되는 72개의 부반송파는 PDSCH전송에 사용될 수 없다.  
+    : LTE에서 지원하는 가장 작은 대역폭은 1.4Mhz 이며 사용되는 부반송파(RB, 6개)가 72개임  
   + System Information Block(SIB)은 DL-SCH로 전송되어 PDSCH에 맵핑된다.  
 
 - SIB1은 셀과 액세스 할수 있는 정보와 TDD의 특수 서브프레임 구성에 대한 정보 나머지 SIB들의 시간 도메인 스케줄링에 대한 정보가 포함  
-- SIB2는 셀에 액세스 할 수 있도록 터미널이 필요하는 정보를 가지고 있다. (UL cell Bandwidth, 랜덤액세스 파라미터, UL 전력 제어에 연관된 파라미터  
+- SIB2는 셀에 액세스 할 수 있도록 터미널에서 필요하는 정보(UL cell Bandwidth, 랜덤액세스 파라미터, UL 전력 제어에 연관된 파라미터)를 가지고 있다.  
 - SIB3는 셀 재선택에 관련된 정보가 포함  
 - SIB4-SIB8은 네이버 셀에 관련된 정보를 포함한다. 이 정보에는 동일 주파수의 네이버 셀, 다른 주파수의 네이버 셀, 그리고 WCDMA/HSPA, GSM, 그리고 CDMA 2000과 같은 non-LTE 네이버 셀에 대한 정보를 포함한다.  
 - SIB9는 HeNB의 이름을 포함  
@@ -33,8 +33,6 @@
 - SIB13에는 MBMS 수신에 대한 중요 정보 포함  
 
 ##### 1.4. Random Access Procedure  
-
-
 UE는 랜덤액세서 채널인 RACH를 통해 eNB에게 프리엠블을 보낸다. 프리엠블의 경우 거리에 따라 정보가 손실 될 수있기 때문에 거리가 길어지면 CP의 길이 또한 길어지게된다.   
 프리엠블을 받은 eNB는 사용된 프리엠블로 거리를 추정한  근거로 터미널 전송 타이밍 조정을 하는 명령을 보내고 추가로 업링크 동기를 설립하고 다음 단계에서 사용될 업링크 자원(스케줄)을 할당한다.  
 
@@ -42,22 +40,22 @@ UE는 랜덤액세서 채널인 RACH를 통해 eNB에게 프리엠블을 보낸�
 
 ###### ㅁ LTE 전송 단위, LTE Slot, LTE Symbol, Basic Time Unit  
 - Resource Block, Resource Grid, Resource Element   
-  + 자원 블록
-    ㄴ. 기지국에서 스케줄링하는 기본단위(LTE OFDM에서 주파수축 및 시간축 2차원 상의 블록 모양을 한 할당 가능 자원의 단위)
-    ㄴ. 1 RB = 84 (12x7) resource elements
-    ㄴ. 1 resource element : 여러 특정 부반송파들이 동일 시간간격인 1 symbol에 위치 가능
-    + 하향링크 사용 대역폭에 따른 자원블록 수
-      ㄴ. 1.4 MHz(6), 3 MHz(15), 5 MHz(25), 10 MHz(50, 우리나라 주로 사용), 15 MHz(75), 20 MHz(100)
-    + 특정 사용자 전송속도
-      ㄴ. 특정 사용자에게 할당되는 자원블록(또는 부반송파)의 수에 의존
-  + 자원 그리드
-    ㄴ. 주파수,시간 두 축에 따라 격자화된 구조(LTE에서 정해진 채널이나 신호들이 저마다 격자 내 세분화된 적정 위치에 매핑됨)
-    ㄴ. 축 단위 구분
-       + 주파수축 : Subcarrier(부반송파) 마다 구별 가능
-       + 시간축 : OFDM Symbol(OFDM 심볼) 마다 구별 가능
-  + 자원 요소
+  + 자원 블록  
+    ㄴ. 기지국에서 스케줄링하는 기본단위(LTE OFDM에서 주파수축 및 시간축 2차원 상의 블록 모양을 한 할당 가능 자원의 단위)  
+    ㄴ. 1 RB = 84 (12x7) resource elements  
+    ㄴ. 1 resource element : 여러 특정 부반송파들이 동일 시간간격인 1 symbol에 위치 가능  
+    + 하향링크 사용 대역폭에 따른 자원블록 수  
+      ㄴ. 1.4 MHz(6), 3 MHz(15), 5 MHz(25), 10 MHz(50, 우리나라 주로 사용), 15 MHz(75), 20 MHz(100)  
+    + 특정 사용자 전송속도  
+      ㄴ. 특정 사용자에게 할당되는 자원블록(또는 부반송파)의 수에 의존  
+  + 자원 그리드  
+    ㄴ. 주파수,시간 두 축에 따라 격자화된 구조(LTE에서 정해진 채널이나 신호들이 저마다 격자 내 세분화된 적정 위치에 매핑됨)  
+    ㄴ. 축 단위 구분  
+       + 주파수축 : Subcarrier(부반송파) 마다 구별 가능  
+       + 시간축 : OFDM Symbol(OFDM 심볼) 마다 구별 가능  
+  + 자원 요소  
     ㄴ. 가장 작은 물리적인 자원(구별가능한 최소 단위로 그룹화된 비트들): 하나의 부반송파(주파수) 및 하나의 OFDM 심볼(시간)  
-       ※ 변조 방식(QPSK,16-QAM,64-QAM)에 따라, 2,4,6 비트(물리채널) 할당
+       ※ 변조 방식(QPSK,16-QAM,64-QAM)에 따라, 2,4,6 비트(물리채널) 할당  
        
 ![img](http://www.ktword.co.kr/img_data/4969_1.JPG)  
 
@@ -83,48 +81,29 @@ UE는 랜덤액세서 채널인 RACH를 통해 eNB에게 프리엠블을 보낸�
     ㄴ. modulation type별 symbol/bit : 64QAM(6), 16QAM(4), QPSK(2)  
     ㄴ. 1 symbol : normal CP (Short CP) = 0.5ms/7, extended CP (Short CP) = 0.5ms/6  
 
-
-
-
 ## 1.2. Logical Layer
+![img](https://t1.daumcdn.net/cfile/tistory/117B8A3F503738CF0D)  
+![img](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210806110404704.png)  
+[LTE Frame 구조](https://encyfic.tistory.com/11)  
 
+### 1.2.1. downlink  
 
+### 1.2.2. uplink  
 
-![img](https://t1.daumcdn.net/cfile/tistory/117B8A3F503738CF0D)
-
-
-![img](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210806110404704.png)
-
-[LTE Frame 구조](https://encyfic.tistory.com/11)
-
-
-
-### 1.2.1. downlink
-
-
-
-### 1.2.2. uplink
-
-#### 1.2.2.1. logical channels
-
-- DTCH
-- DCCH
-- CCCH
+#### 1.2.2.1. logical channels  
+- DTCH  
+- DCCH  
+- CCCH  
 
 #### 1.2.2.2. transport channels
-
-- UL-SCH
-- RACH
+- UL-SCH  
+- RACH  
 
 #### 1.2.2.3. physical channels
-
-- PUCCH (Physical Uplink Control CHannel) : UE → BS(eNB)
-
-  . HARQ의 ANK/NACK와 (CQI)Channel Quality Indicator정보를 전송
-
-  . 예약된 주파수 영역 내에서만 전송(uplink CH BW의 edge쪽의 band에서 resource 블럭 사용)
-
-  . Uplink Control Information (UCI) 전달
+- PUCCH (Physical Uplink Control CHannel) : UE → BS(eNB)  
+  . HARQ의 ANK/NACK와 (CQI)Channel Quality Indicator정보를 전송  
+  . 예약된 주파수 영역 내에서만 전송(uplink CH BW의 edge쪽의 band에서 resource 블럭 사용)  
+  . Uplink Control Information (UCI) 전달  
 
   ​	-. CQI (Channel Quality Indicator) : downlink radio link quality, 단말에서 수신받을 때 무선 링크의 상태를 기록한 정보
 

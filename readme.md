@@ -1,6 +1,19 @@
 # 문법 
 -. <https://eungbean.github.io/2018/06/11/How-to-use-markdown/
 
+
+### 수식
+a. latex.codecogs.com 홈페이지 접속
+b. 변환하고자 하는 수식 입력
+c. 출력된 이미지를 우측 마우스 클릭 후 이미지 주소 복사
+d. 복사된 이미지 url을 마크다운으로 임베딩
+
+![](복사된 url)
+
+예)
+![](https://latex.codecogs.com/png.latex?%5Cfrac%7Bd_x%7D%20%7Bd_t%7D)
+
+
 ### 1 문단 (Paragraph)  
 
 ### 2 제목 (Header)  
@@ -75,8 +88,7 @@ URL 링크 : <example.com/> & <example@example.com>
 
 
 
-
-
+## 수식
 
 
 

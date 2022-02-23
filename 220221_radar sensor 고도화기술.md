@@ -1,5 +1,4 @@
-radar sensor 고도화 기술
-https://itfind.or.kr/WZIN/jugidong/1993/file8797866716529755485-199301.pdf
+### [radar sensor 고도화 기술](https://itfind.or.kr/WZIN/jugidong/1993/file8797866716529755485-199301.pdf)
 
 - 거리, 각도, 속도 해상도 향상을 위한 방안  
   + 거리: 넓은 주파수 대역폭 필요(24GHz → 76~81GHz). 추가로, 안테나, 송수신 소자 설계, 데이터 실시간 처리 기술 필요  
@@ -23,7 +22,7 @@ https://itfind.or.kr/WZIN/jugidong/1993/file8797866716529755485-199301.pdf
 - - -
 자율주행 필요 기능  
 
-라이다 센서의 출력과 같이 모든 객체로부터 반사된 다중 산란점을 포인트-츨라우드로 생성하는 기술[9]  
+라이다 센서의 출력과 같이 모든 객체로부터 반사된 다중 산란점을 포인트-츨라우드로 생성하는 기술[9](https://www.mdpi.com/1424-8220/19/5/1136)  
   - 장점) 포인트 별 도플러 성분을 이용하여 다중 객체 분리 가능  
   - 단점) 낮은 해상도(광학 센서 대비)   
 그리드-맵 기술  
@@ -40,5 +39,31 @@ https://itfind.or.kr/WZIN/jugidong/1993/file8797866716529755485-199301.pdf
 [14] D. Kellner et al., “Wheel Extraction based on Micro Doppler Distribution using High-Resolution Radar,” IEEE, MTT-S International Conference on Microwaves for Intelligent Mobility, Apr. 2015.  
 
 
-포인트 클라우드 변화량 비교를 통한 동적환경 인식, 2019-0154812  
-입자 군집 최적화를 이용한 무인 비행체의 최적 경로 생성 방법, 2020-0031573  
+#### 추가 검토 필요 기술
+- 포인트 클라우드 변화량 비교를 통한 동적환경 인식, 2019-0154812  
+- 입자 군집 최적화를 이용한 무인 비행체의 최적 경로 생성 방법, 2020-0031573  
+
+- - -
+
+#### [Portable Microwave Radar Systems for Short-Range Localization and Life Tracking: A Review (Published: 6 March 2019)](https://www.mdpi.com/1424-8220/19/5/1136/htm)  
+- short range localization and life tracking applications: medical care, CE, ADAS, indoor robots, drone navigation, etc  
+- this paper review the recent advances in CW Radar system for short range localization and life tracking applications  
+- Researchers have been working on radar applications in **through-wall detecting** [7,8], **indoor localization** [9], **driver assistance** [6,10,11], and **bio-medical applications** [12,13,14,15], etc. (short-range and indoor localization have also been a hot research topic [18,19,20,21,22,23])  
+  + camera-based localization: some difficulties in getting accurate depth information of targets  
+  + beacon-based solutions and inertial sensors: require the targets to carry the devices all the time  
+  + radar sensor: 
+    - operational at all the different weather conditions for autonomous driving  
+    - remotely detect and monitor tiny vital signs (respiration and heart rate)
+        + contrastly, current vital sign measurement devices and wearable technologies require the subject to have direct contact with the devices during the measurement, which affect the accuracy of the measurement results.  
+        + 
+  + 
+- category: waveform type
+  + Doppler radar or interferometry radar utilizes a single tone waveform to obtain motion information caused by the Doppler effect [3,40]
+    - simple signal processing
+    - superior accuracy in motion and displacement measurement (doppler radar)
+    - very good option for applications (vital sign detection [41,42,43], sleep monitoring, mechanical vibration detection, structural health monitoring [45,46], etc)
+      : do not require range information 
+  + FMCW radar uses a modulated CW to sense both the range and doppler information of target
+    - better candidate for applications that require range information (localization, fall detection, life activity monitoring and gesture recognition)
+    - detect vital signs with the presence of multiple targets (additional range information)
+- 

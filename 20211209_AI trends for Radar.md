@@ -1,6 +1,4 @@
-##### 20211209 | adas, radar (학술검색)
-- A Sensor Fused Rear Cross Traffic Detection System Using Transfer Learning  
-  . https://www.mdpi.com/1424-8220/21/18/6055/htm
+# [A Sensor Fused Rear Cross Traffic Detection System Using Transfer Learning](https://www.mdpi.com/1424-8220/21/18/6055/htm)
 - summary
   - proposes a RCT detection system by fusing information from the rear view camera and short range radar  
   - The overall architecture of the proposed RCT detection system  

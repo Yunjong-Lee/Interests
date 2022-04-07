@@ -119,8 +119,7 @@ snap
 
 - - - - - -
 
-#### 21.11.08, 실외자율주행 로봇 기술기준 개발, 
-- https://itech.keit.re.kr/index.do#detail|03060300|/ntcinfo/infoSrch/retrieveRptpSrchDetail.do|.sub_con|guidObjtSe=DL2004&rptpNm=%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89&spvsOrgnNm=&searchSbjtId=&issuYy=&ttlDvlmStrDe=&ttlDvlmEndDe=&pageIndex=1&sbjtId=20011901&  
+#### 21.11.08, [실외자율주행 로봇 기술기준 개발](https://itech.keit.re.kr/index.do#detail|03060300|/ntcinfo/infoSrch/retrieveRptpSrchDetail.do|.sub_con|guidObjtSe=DL2004&rptpNm=%EC%9E%90%EC%9C%A8%EC%A3%BC%ED%96%89&spvsOrgnNm=&searchSbjtId=&issuYy=&ttlDvlmStrDe=&ttlDvlmEndDe=&pageIndex=1&sbjtId=20011901&)  
 
 
 - 실외 자율주행 로봇 관련 국내/외 현황 및 기술 기준   

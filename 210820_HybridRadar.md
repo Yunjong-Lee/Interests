@@ -1,5 +1,6 @@
 # Hybrid Radar System  
-
+git tag <Radar>
+  
 - 특징 : “레이더의 기본 기능”과 “RF Signal Detection”을 포함하는 Hybrid 레이더  
 - 목적: 주차장이나 좁은 골목 등에서 주행중인 차량방향으로 사람/자동차 등 움직이는 object가 차량 주행방향과 교차되는 경우를 사전에 예측하여 사고를 방지 또는 최소화  
 - 기능  

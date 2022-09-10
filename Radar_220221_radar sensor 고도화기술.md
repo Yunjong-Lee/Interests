@@ -1,3 +1,27 @@
+# Radar Fundamental
+### Radar 구분
+- 전자파 송신 형태 (송신파 연속성 여부에 따라 구분)
+  + continuous-wave radar : 연속적인 정현파를 송/수신, 상대적으로 구조 단순
+    - 하나의 주파수를 가진 파형을 송신 할 경우, 송신 신호가 Target을 맞고 반사 되어진 신호의 Doppler 주파수를 분석하여 Target의 신호와 방향을 파악 (스피드건, 고도계 등)
+    - Target의 거리 정보를 얻을 수 없음
+      + 거리 정보를 얻기 위하여 FMCW, MFSK 등 방식을 이용
+  + pulse radar : 비행물체 감지 등 비교적 복잡
+    - 송신 펄스폭은, 0.1~10 ㎲, 수 ㎱, 수 ㎳ 정도, 휴지기간은, 1 ㎲ ~ 10 ㎳ 정도
+    - 중요 parameters
+      + Pulse Width
+      + PRI(Pulse Repetition Interval)  = 1/PRF(Pulse Repetition Frequency)
+      + Duty Cycle(Pulse Width/Period of pulse)
+      + Peak Power
+      + Carrier (Wave) Frequency
+
+- 신호처리 방식 분류
+  + 넌 코히런트 : 진폭 및 시간지연 탐지(송수신 위상 변화 탐지 불가)
+    - 지도 배경에 2 차원적 표시 제공
+    - 표적을 식별하는 운용자 능력에 주로 영향을 받음
+  + 도플러 레이더 (코히런트)    : 진폭, 시간지연 및 송수신 위상 변화 모두 탐지 가능
+    - 송수신 상대적 움직임(이동 속도, 방향) 등도 감지 가능
+    - 표적 운동 특성 및 영상화 능력 가능
+
 ### [radar sensor 고도화 기술](https://itfind.or.kr/WZIN/jugidong/1993/file8797866716529755485-199301.pdf)
 
 - 거리, 각도, 속도 해상도 향상을 위한 방안  
@@ -20,6 +44,7 @@
 
 
 - - -
+
 자율주행 필요 기능  
 
 라이다 센서의 출력과 같이 모든 객체로부터 반사된 다중 산란점을 포인트-츨라우드로 생성하는 기술[9](https://www.mdpi.com/1424-8220/19/5/1136)  

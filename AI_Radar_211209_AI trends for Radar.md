@@ -1,9 +1,16 @@
 # Index
 1. [A Sensor Fused Rear Cross Traffic Detection System Using Transfer Learning](#A-Sensor-Fused-Rear-Cross-Traffic-Detection-System-Using-Transfer-Learning)
+2. [Soli 레이더](#Soli-레이더)  
+3. 
 
 <br>  
+
 ---
 
+# [Soli 레이더](https://brunch.co.kr/@synabreu/57)
+- Soli Radar-Based Perception and Interaction in Pixel 4(https://ai.googleblog.com/2020/03/soli-radar-based-perception-and.html)
+
+<br>  
 
 # [A Sensor Fused Rear Cross Traffic Detection System Using Transfer Learning](https://www.mdpi.com/1424-8220/21/18/6055/htm)
 - summary

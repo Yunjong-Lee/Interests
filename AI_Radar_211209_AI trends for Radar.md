@@ -4,15 +4,14 @@
 3. 
 
 <br>  
-
 ---
 
-# [Soli 레이더](https://brunch.co.kr/@synabreu/57)
+# 1. [Soli 레이더](https://brunch.co.kr/@synabreu/57)
 - Soli Radar-Based Perception and Interaction in Pixel 4(https://ai.googleblog.com/2020/03/soli-radar-based-perception-and.html)
 
 <br>  
 
-# [A Sensor Fused Rear Cross Traffic Detection System Using Transfer Learning](https://www.mdpi.com/1424-8220/21/18/6055/htm)
+# 2. [A Sensor Fused Rear Cross Traffic Detection System Using Transfer Learning](https://www.mdpi.com/1424-8220/21/18/6055/htm)
 - summary
   - proposes a RCT detection system by fusing information from the rear view camera and short range radar  
   - The overall architecture of the proposed RCT detection system  

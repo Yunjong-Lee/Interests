@@ -16,7 +16,7 @@ One important task a radar system performs is target detection. The detection it
     <details>
     <summary> </summary>
     <div markdown="1">
-레이더 시스템이 수행하는 중요한 작업 중 하나는 표적 탐지다. 탐지 자체는 매우 간단하다. 신호를 임계값과 비교합니다. 따라서 탐지에 대한 실제 작업은 적절한 임계값을 제시하고 있습니다. 일반적으로 임계값은 탐지 확률과 오경보 확률의 함수입니다.
+레이더 시스템이 수행하는 중요한 작업 중 하나는 표적 탐지다. 탐지 자체는 매우 간단(신호를 임계값과 비교)하다. 따라서 탐지에 대한 실제 작업은 적절한 임계값을 제시하고 있다. 일반적으로 임계값은 탐지 확률과 오경보 확률의 함수임.
     </div>
     </details>
 
@@ -31,9 +31,12 @@ In many phased array systems, because of the cost associated with a false detect
 There is extensive literature on how to determine the detection threshold. Readers might be interested in the [Signal Detection in White Gaussian Noise](https://kr.mathworks.com/help/phased/ug/signal-detection-in-white-gaussian-noise.html) and [Signal Detection Using Multiple Samples](https://kr.mathworks.com/help/phased/ug/signal-detection-using-multiple-samples.html) examples for some well known results. However, all these classical results are based on theoretical probabilities and are limited to white Gaussian noise with known variance (power). In real applications, the noise is often colored and its power is unknown.
     <details>
     <summary> </summary>
-    <div markdown="1">      
-감지 임계값을 결정하는 방법에 대한 광범위한 문헌이 있습니다. 독자는 잘 알려진 결과에 대해 White Gaussian Noise의 신호 감지 및 다중 샘플을 사용한 신호 감지 예제에 관심이 있을 수 있습니다. 그러나 이러한 모든 고전적 결과는 이론적 확률을 기반으로 하며 알려진 분산(전력)이 있는 white gaussian noise로 제한됩니다. 실제 응용 프로그램에서 노이즈는 종종 colored이며 그 전력은 알 수 없습니다.
-    </div>
+        <div markdown="1">      
+        감지 임계값을 결정하는 방법에 대한 문헌들:
+        독자는 잘 알려진 결과에 대해 White Gaussian Noise의 신호 감지 및 다중 샘플을 사용한 신호 감지 예제에 관심이 있을 수 있습니다. 
+        그러나 이러한 모든 고전적 결과는 이론적 확률을 기반으로 하며 알려진 분산(전력)이 있는 white gaussian noise로 제한됩니다. 
+        실제 응용 프로그램에서 노이즈는 종종 colored이며 그 전력은 알 수 없습니다.
+        </div>
     </details>
       
 CFAR technology addresses these issues. In CFAR, when the detection is needed for a given cell, often termed as the cell under test (CUT), the noise power is estimated from neighboring cells.

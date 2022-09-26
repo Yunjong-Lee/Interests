@@ -6,8 +6,9 @@
 # [ROS](https://m.blog.naver.com/PostView.naver?blogId=rich0812&logNo=221465680514&targetKeyword=&targetRecommendationCode=1)  
 
 
-# SLAM  
-  기하학적 SLAM과 Deep learning 기반 SLAM으로 구분
+# SLAM
+- 211015
+- 기하학적 SLAM과 Deep learning 기반 SLAM으로 구분
 
 ### 1. 기하학적 SLAM  
   임의의 환경에서 획득한 영상 시퀀스로부터 기하학적 계산을 통해 카메라의 위치 및 3차원 지도 생성하는 기법으로, 장점은 ... 그러나, 누적오차 발생되는 단점을 가짐  

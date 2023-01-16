@@ -1,5 +1,5 @@
-# Index
-1. ![]()  
+### Index
+1. [Top Technology 리포트](#23-01-16-Top-Technology-리포트_IDTechEx-발행)  
 
 
 
@@ -8,10 +8,10 @@
 
 ---
 
-#### [23.01.16, Top Technology 리포트_IDTechEx 발행](https://www.idtechex.com/en/research-article/idtechex-insights-technology-trends-2023-magazine/28359)
+### [23.01.16, Top Technology 리포트_IDTechEx 발행](https://www.idtechex.com/en/research-article/idtechex-insights-technology-trends-2023-magazine/28359)
 - 매년말 발행하는 Top Technology 리포트
 
-#### 22.03.15, ICT Brief
+### 22.03.15, ICT Brief
 - 부문별 모니터링  
   - 디지털 사회혁신(디지털 대전환을 위한 10대 디지털 분야)  
     : 인공지능, 5G/6G, 양자, 사이버보안, 지능형 반도처, 우주, 첨단로봇, 가상융합(XR), 고성능컴퓨팅, 블록체인  
@@ -25,7 +25,7 @@
 - 
 - - - - - -
 
-#### 22.03.08, 메타버스 정부의 기회와 도전: 추진과제와 정책적 시사점  
+### 22.03.08, 메타버스 정부의 기회와 도전: 추진과제와 정책적 시사점  
 D.gov 이슈분석, 2021.04호  
 - 주요 결과
   > 메타버스 서시브는 비대면으로 다수의 소통이 필요한 행사/홍보 분야에 주로 활용(제페토, 이프랜드)

@@ -1,4 +1,15 @@
+# Index
+1. ![]()  
 
+
+
+
+
+
+---
+
+#### [23.01.16, Top Technology 리포트_IDTechEx 발행](https://www.idtechex.com/en/research-article/idtechex-insights-technology-trends-2023-magazine/28359)
+- 매년말 발행하는 Top Technology 리포트
 
 #### 22.03.15, ICT Brief
 - 부문별 모니터링  

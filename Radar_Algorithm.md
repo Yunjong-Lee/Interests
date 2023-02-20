@@ -8,85 +8,59 @@
 ---
 
 
-# Constant False Alarm Rate  
+# [Constant False Alarm Rate](https://kr.mathworks.com/help/phased/ug/constant-false-alarm-rate-cfar-detection.html)    
 - 210915
 
-### Introduction
-
-One important task a radar system performs is target detection. The detection itself is fairly straightforward. It compares the signal to a threshold. Therefore, the real work on detection is coming up with an appropriate threshold. In general, the threshold is a function of both the probability of detection and the probability of false alarm.
+### Introduction  
+- One important task a radar system performs is target detection (compares the signal to a threshold). Therefore, the real work on detection is coming up with an appropriate threshold. In general, the threshold is a function of both the probability of detection and the probability of false alarm.
     <details>
     <summary> </summary>
     <div markdown="1">
-레이더 시스템이 수행하는 중요한 작업 중 하나는 표적 탐지다. 탐지 자체는 매우 간단(신호를 임계값과 비교)하다. 따라서 탐지에 대한 실제 작업은 적절한 임계값을 제시하고 있다. 일반적으로 임계값은 탐지 확률과 오경보 확률의 함수임.
+      레이더 시스템 : 표적 탐지(방법_신호를 임계값과 비교)
+      - 적절한 임계값을 찾는 것이 중요함
+      - 임계값은 탐지 확률과 오경보 확률의 함수임.
     </div>
     </details>
 
-In many phased array systems, because of the cost associated with a false detection, it is desirable to have a detection threshold that not only maximizes the probability of detection but also keeps the probability of false alarm below a preset level.
+- There is extensive literature on how to determine the detection threshold. Readers might be interested in the [Signal Detection in White Gaussian Noise](https://kr.mathworks.com/help/phased/ug/signal-detection-in-white-gaussian-noise.html) and [Signal Detection Using Multiple Samples](https://kr.mathworks.com/help/phased/ug/signal-detection-using-multiple-samples.html) examples for some well known results. However, all these classical results are based on theoretical probabilities and are limited to white Gaussian noise with known variance (power). In real applications, the noise is often colored and its power is unknown.
+-  CFAR technology addresses these issues. In CFAR, when the detection is needed for a given cell, often termed as the cell under test (CUT), the noise power is estimated from neighboring cells.
     <details>
     <summary> </summary>
-    <div markdown="1">
-많은 위상 배열 시스템에서 잘못된 탐지와 관련된 비용 때문에 탐지 확률을 최대화할 뿐만 아니라 미리 설정된 수준 아래로 잘못된 경보의 확률을 유지하는 탐지 임계값을 갖는 것이 바람직합니다.
-    </div>
-    </details>
-
-There is extensive literature on how to determine the detection threshold. Readers might be interested in the [Signal Detection in White Gaussian Noise](https://kr.mathworks.com/help/phased/ug/signal-detection-in-white-gaussian-noise.html) and [Signal Detection Using Multiple Samples](https://kr.mathworks.com/help/phased/ug/signal-detection-using-multiple-samples.html) examples for some well known results. However, all these classical results are based on theoretical probabilities and are limited to white Gaussian noise with known variance (power). In real applications, the noise is often colored and its power is unknown.
-    <details>
-    <summary> </summary>
-        <div markdown="1">      
-        감지 임계값을 결정하는 방법에 대한 문헌들:
-        독자는 잘 알려진 결과에 대해 White Gaussian Noise의 신호 감지 및 다중 샘플을 사용한 신호 감지 예제에 관심이 있을 수 있습니다. 
-        그러나 이러한 모든 고전적 결과는 이론적 확률을 기반으로 하며 알려진 분산(전력)이 있는 white gaussian noise로 제한됩니다. 
-        실제 응용 프로그램에서 노이즈는 종종 colored이며 그 전력은 알 수 없습니다.
-        </div>
-    </details>
-      
-CFAR technology addresses these issues. In CFAR, when the detection is needed for a given cell, often termed as the cell under test (CUT), the noise power is estimated from neighboring cells.
-    <details>
-    <summary> </summary>
-    <div markdown="1">
-CFAR 기술은 이러한 문제를 해결합니다. CFAR에서 CUT(Cell Under Test)라고 하는 주어진 셀에 대해 감지가 필요할 때 노이즈 전력은 인접 셀에서 추정됩니다.
+    <div markdown="1">      
+    감지 임계값을 결정하는 방법에 대한 문헌들:</br>
+    - 이론적 확률을 기반 White Gaussian Noise의 신호 감지 및 다중 샘플을 사용한 신호 감지 : 알려진 분산(전력)이 있는 white gaussian noise. </br>
+    - 실제 응용 프로그램에서 노이즈는 colored(전력을 알 수 없음) </br>
+    solution: </br>
+    - CFAR CUT(Cell Under Test, 주어진 셀에 대해 검출이 필요할 때 노이즈 전력은 인접 셀에서 추정) 활용 </br>
     </div>
     </details>
       
-Then the detection threshold, $T$, is given by
+- Then the detection threshold, $T$, is given by
 
 $T = αP_n$
+> $P_n$ 은 noise power 추정치이고, $α$ 는 임계값 인자라 불리는 스케일링 인자.
 
-where $P_n$ is the noise power estimate and $α$ is a scaling factor called the threshold factor.
-    <details>
-    <summary> </summary>
-    <div markdown="1">
-여기서, $P_n$ 은 noise power 추정치이고, $α$ 는 임계값 인자라 불리는 스케일링 인자이다.
-    </div>
-    </details>
-    
-From the equation, it is clear that the threshold adapts to the data. It can be shown that with the appropriate threshold factor, $α$, the resulting probability of false alarm can be kept at a constant, hence the name CFAR.
+- the appropriate threshold factor, $α$,는 오류탐지율을 일정하게 유지.
 
 ### Cell Averaging CFAR Detection
+- base CFAR techniques
+- noise samples are extracted from both leading and lagging cells (called training cells) around the CUT. The noise estimate can be computed as [1]
+  > *P**n*=1*N**N**m*=1*x**m*
+  + *N* : the number of training cells 
+  + *x**m* : the sample in each training cell.
+    - If *x**m* happens to be the output of a square law detector, then *P**n* represents the estimated noise power. 
+    - the number of leading and lagging training cells are the same & Guard cells are placed adjacent to the CUT, both and leading and lagging it. 
+      + purpose of guard cells: to avoid signal components from leaking into the training cell, which could adversely affect the noise estimate.
 
-The cell averaging CFAR detector is probably the most widely used CFAR detector. It is also used as a baseline comparison for other CFAR techniques. In a cell averaging CFAR detector, noise samples are extracted from both leading and lagging cells (called training cells) around the CUT. The noise estimate can be computed as [1]
-
-
-
-*P**n*=1*N**N**m*=1*x**m*
-
-
-
-where *N* is the number of training cells and *x**m* is the sample in each training cell. If *x**m* happens to be the output of a square law detector, then *P**n* represents the estimated noise power. In general, the number of leading and lagging training cells are the same. Guard cells are placed adjacent to the CUT, both and leading and lagging it. The purpose of these guard cells is to avoid signal components from leaking into the training cell, which could adversely affect the noise estimate.
-
-The following figure shows the relation among these cells for the 1-D case.
+    ※ The following figure shows the relation among these cells for the 1-D case.  
 
 ![img](https://kr.mathworks.com/help/examples/phased/win64/CFARDetectionExample_01.png)
 
-With the above cell averaging CFAR detector, assuming the data passed into the detector is from a single pulse, i.e., no pulse integration involved, the threshold factor can be written as [1]
-
+- With the above cell averaging CFAR detector, assuming the data passed into the detector is from a single pulse, i.e., no pulse integration involved, the threshold factor can be written as [1]
 
 
 *α*=*N*(*P*−1/*N**f**a*−1)
-
-
-
-where *P**f**a* is the desired false alarm rate.
++ *P**f**a* is the desired false alarm rate.
 
 ### CFAR Detection Using Automatic Threshold Factor
 
@@ -187,10 +161,16 @@ act_pfa = 9.6000e-04
 
 ### CFAR Detection Threshold
 
-A CFAR detection occurs when the input signal level in a cell exceeds the threshold level. The threshold level for each cell depends on the threshold factor and the noise power in that derived from training cells. To maintain a constant false alarm rate, the detection threshold will increase or decrease in proportion to the noise power in the training cells. Configure the CFAR detector to output the threshold used for each detection using the `ThresholdOutputPort` property. Use an automatic threshold factor and 200 training cells.
+- A CFAR detection occurs when the input signal level in a cell exceeds the threshold level. 
+- The threshold level for each cell depends on the threshold factor and the noise power in that derived from training cells. 
+- To maintain a constant false alarm rate, the detection threshold will increase or decrease in proportion to the noise power in the training cells. 
+- Configure the CFAR detector to output the threshold used for each detection using the `ThresholdOutputPort` property. Use an automatic threshold factor and 200 training cells.
 
 ```
-release(cfar);cfar.ThresholdOutputPort = true;cfar.ThresholdFactor = 'Auto';cfar.NumTrainingCells = 200;
+release(cfar);
+cfar.ThresholdOutputPort = true;
+cfar.ThresholdFactor = 'Auto';
+cfar.NumTrainingCells = 200;
 ```
 
 Next, create a square-law input signal with increasing noise power.

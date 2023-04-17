@@ -317,7 +317,7 @@ CA-CFAR
 <br>
 
 
-# Kalman Filter
+# 2. Kalman Filter
 - https://ko.wikipedia.org/wiki/%EC%B9%BC%EB%A7%8C_%ED%95%84%ED%84%B0
 
   잡음이 포함되어 있는 측정치(과거에 수행한 측정값)를 바탕으로 선형 역학계의 상태를 추정(현재 상태 변수의 결합분포를 추정)하는 재귀필터.

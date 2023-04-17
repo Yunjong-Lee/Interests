@@ -1,6 +1,6 @@
 # INDEX 
 1. [CFAR](#Constant-False-Alarm-Rate)  
-2. [Kalman Filter](# 2-Kalman-Fliter)  
+2. [Kalman Filter](#Kalman-Fliter)  
 3. [Angle of Arrival](#차량용-레이더-시스템에서-주파수-영역의-도래각-추정-기법에-관한-연구)
 
 <br>
@@ -8,7 +8,7 @@
 ---
 
 
-# 1. [Constant False Alarm Rate](https://kr.mathworks.com/help/phased/ug/constant-false-alarm-rate-cfar-detection.html)    
+# [Constant False Alarm Rate](https://kr.mathworks.com/help/phased/ug/constant-false-alarm-rate-cfar-detection.html)    
 - 210915
 
 ### Introduction  
@@ -317,7 +317,7 @@ CA-CFAR
 <br>
 
 
-# 2. Kalman Filter
+# Kalman Filter
 - https://ko.wikipedia.org/wiki/%EC%B9%BC%EB%A7%8C_%ED%95%84%ED%84%B0
 
   잡음이 포함되어 있는 측정치(과거에 수행한 측정값)를 바탕으로 선형 역학계의 상태를 추정(현재 상태 변수의 결합분포를 추정)하는 재귀필터.

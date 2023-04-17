@@ -9,16 +9,15 @@
 
 
 # [Constant False Alarm Rate](https://kr.mathworks.com/help/phased/ug/constant-false-alarm-rate-cfar-detection.html)    
-- 210915
+- 2109.01.05
 
 ### Introduction  
 - One important task a radar system performs is target detection (compares the signal to a threshold). Therefore, the real work on detection is coming up with an appropriate threshold. In general, the threshold is a function of both the probability of detection and the probability of false alarm.
     <details>
     <summary> </summary>
     <div markdown="1">
-      레이더 시스템 : 표적 탐지(방법_신호를 임계값과 비교)
-      - 적절한 임계값을 찾는 것이 중요함
-      - 임계값은 탐지 확률과 오경보 확률의 함수임.
+      레이더 시스템 : 표적 탐지(방법_신호를 임계값과 비교)  
+      - 적절한 임계값(탐지 확률과 오경보 확률의 함수)을 찾는 것이 중요  
     </div>
     </details>
 
@@ -27,6 +26,15 @@
     <details>
     <summary> </summary>
     <div markdown="1">      
+    CFAR는 클러터 배경환경에서 일정한 오경보율을 유지하면서 탐지확률을 높이기 위해 사용되는 Adaptive thresholding 기법으로, sliding window 기법을 이용함.
+        - 기본적인 동작은 test cell 주변에 reference cell을 구성하고 reference cell을 이용하여 클러터의 평균값을 구함
+        - 클러터의 평균값과 scale factor를 곱하여 target threshold T를 찾아냄.
+        - 대표적인 CFAR 기법: CFAR-CA, CFAR-OS(Order Static)
+        - CFAR 기법들 간의 차이: clutter 추정 방법의 차이
+            + CFAR-CA: Reference Cell의 평균을 이용하여 클러터 추정, homogeneous한 배경 환경에 유리
+            + CFAR-OS: Reference Cell의 중간값을 이용하여 클러터 추정, non-homogeneous한 배경 환경에 유리
+            
+    CFAR는 이러한 issue들을 해결한다. CFAR에서 종종 테스트 대상 셀(CUT)이라고 하는 지정된 셀에 대한 검출이 필요할 때 잡음 전력은 이웃 셀에서 추정한다.
     감지 임계값을 결정하는 방법에 대한 문헌들:</br>
     - 이론적 확률을 기반 White Gaussian Noise의 신호 감지 및 다중 샘플을 사용한 신호 감지 : 알려진 분산(전력)이 있는 white gaussian noise. </br>
     - 실제 응용 프로그램에서 노이즈는 colored(전력을 알 수 없음) </br>

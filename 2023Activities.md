@@ -243,7 +243,16 @@ A --> |y| C1
     - [무인비행체용 지상탐지 레이더 개발](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202100006659) 보고서 참조
     - [저고도 소형드론 식별·주파수 운용요구 및 제도개선 사항 도출 연구](https://www.rra.go.kr/FileDownSvl?file_type=research2&file_parentseq=1169&file_seq=1) 보고서 참조
   + 재난환경 인명탐지 레이더
-  
+
+---
+
+### Radar Promotion 자료 초안 수립
+
+
+### 60GHz Radar 측정
+- [표적 시뮬레이션 솔루션](https://www.dspace.com/en/pub/home/products/systems/darts/use-case-in-cabin-monitoring.cfm) 검토 필요
+
+
 </br>  </br>  </br>  
 [^1]: A. Albanese, L. Cheng, M. Ursino, and N. W. Chbat, “An integrated mathematical model
 of the human cardiopulmonary system: Model development,” Amer. J. Physiol.-Heart Circulatory

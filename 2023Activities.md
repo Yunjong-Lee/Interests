@@ -1,5 +1,41 @@
 # Activities 
 
+## [W17 | 23.04.23 - 23.04.29 ]  
+
+### 차량용 FMCW 레이다 시스템 시뮬레이터 개발
+- 2020 한국자동차공학회 춘계학술대회, 노태건, 남상욱
+- 
+
+---
+
+## [W16 | 23.04.16 - 23.04.22 ]  
+
+### 지능형 레이더 기술동향, 전자통신동향분석 제36권 제2호 2021년 4월  
+- Applications  
+  + 지능형 모센센싱: 조명 제어, 자동 문 개폐, 보안 경보 등
+    - laptop, speaker, tablet등의 시스템에 움직임 감지용
+    - XENSIVTMBGT60LTR11AIP(인피니언, 60GHz, 도플러모션센서)
+  + 트래픽 Monitoring  
+  + 드론/PAV(Personal Air Vehicle) 자율비행  
+    - 한국형 도심항공교통(K-UAM) 로드맵 겈토 필요함.
+    - 카메라, 레이더, 라이다 등을 모두 포함하는 고도의 센싱 기술, AI 기술, 네트워크 기술 필요
+    - Issues: 주변상황을 판단해 통제할 수 있는 기술과 안정성, 무게, 배터리 용량, 소음, 항공 교통 정리와 인프라 기술
+      + 사람/사물 구분, 
+  + 드론탐지
+    - 미세도플러를 이용한 특성벡터를 추출하여 드론과 새 구분
+    - [무인비행체용 지상탐지 레이더 개발](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202100006659) 보고서 참조
+    - [저고도 소형드론 식별·주파수 운용요구 및 제도개선 사항 도출 연구](https://www.rra.go.kr/FileDownSvl?file_type=research2&file_parentseq=1169&file_seq=1) 보고서 참조
+  + 재난환경 인명탐지 레이더
+
+---  
+
+### Radar Promotion 자료 초안 수립
+
+---  
+
+### 60GHz Radar 측정
+- [표적 시뮬레이션 솔루션](https://www.dspace.com/en/pub/home/products/systems/darts/use-case-in-cabin-monitoring.cfm) 검토 필요
+
 ## [ W10 ] 23.03.06 ~ 03.12  
 
 - mmWave_toolbox 검토  
@@ -221,36 +257,12 @@ A --> |y| C1
 - 양자통신(양자 암호 통신이라고도 하며, 통신망 관점에서는 양자암호키 분배망이라고 함) 시작: 
   + Tx) 편광판 2 개와 1개의 미트를 나타내는 편광 상태를 미리 정의한 뒤 메시지를 담은 임의의 비트를 양자 채널을 통해 편광시켜 보낸다. 편광에 따라 광자 신호는 수신자의 편광필터로 전달됨. 송신자가 보낸 광자 신호는 물리적으로 편광에 의한 난수가 발생.
   + Rx) 송신단에서 정보를 알랴주면, 수신단의 필터가 동일한지 검증을 거친 다음 비트 보관.
-  + 송/수신자는 공개 채널을 통해 결정한 비트값을 공유하고, 이것을 암호로 활용
+  + 송/수신자는 공개 채널을 통해 결정한 비트값을 공유하고, 이것을 암호로 활용  
+  
 
 --- 
 
-## [W16 | 23.04.16 - 23.04.22 ]  
 
-### 지능형 레이더 기술동향, 전자통신동향분석 제36권 제2호 2021년 4월  
-- Applications  
-  + 지능형 모센센싱: 조명 제어, 자동 문 개폐, 보안 경보 등
-    - laptop, speaker, tablet등의 시스템에 움직임 감지용
-    - XENSIVTMBGT60LTR11AIP(인피니언, 60GHz, 도플러모션센서)
-  + 트래픽 Monitoring  
-  + 드론/PAV(Personal Air Vehicle) 자율비행  
-    - 한국형 도심항공교통(K-UAM) 로드맵 겈토 필요함.
-    - 카메라, 레이더, 라이다 등을 모두 포함하는 고도의 센싱 기술, AI 기술, 네트워크 기술 필요
-    - Issues: 주변상황을 판단해 통제할 수 있는 기술과 안정성, 무게, 배터리 용량, 소음, 항공 교통 정리와 인프라 기술
-      + 사람/사물 구분, 
-  + 드론탐지
-    - 미세도플러를 이용한 특성벡터를 추출하여 드론과 새 구분
-    - [무인비행체용 지상탐지 레이더 개발](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202100006659) 보고서 참조
-    - [저고도 소형드론 식별·주파수 운용요구 및 제도개선 사항 도출 연구](https://www.rra.go.kr/FileDownSvl?file_type=research2&file_parentseq=1169&file_seq=1) 보고서 참조
-  + 재난환경 인명탐지 레이더
-
----
-
-### Radar Promotion 자료 초안 수립
-
-
-### 60GHz Radar 측정
-- [표적 시뮬레이션 솔루션](https://www.dspace.com/en/pub/home/products/systems/darts/use-case-in-cabin-monitoring.cfm) 검토 필요
 
 
 </br>  </br>  </br>  

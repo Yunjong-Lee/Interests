@@ -1,7 +1,7 @@
 # index
 1. [Quantum Computing](#1-Quantum-Computing)
-2. [Metabus](#Metabus)
-3. [온디바이스 AI 기술](#온디바이스-AI-기술)
+2. [Metabus](#2-Metabus)
+3. [온디바이스 AI 기술](#3-온디바이스-AI-기술)
 
 ---
 <br/>
@@ -41,7 +41,7 @@
 </br>
 
 
-# MetaBus
+# 2. MetaBus
 - 211223
 ### 1. 메타버스
 #### 1.1. 발전 현황  

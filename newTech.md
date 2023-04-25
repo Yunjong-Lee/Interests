@@ -116,4 +116,9 @@
 
 </br>
 
-#
+---
+
+# 
+### [Siemens EDA 한글백서]
+### https://www.iitp.kr/kr/1/knowledge/periodicalListA.it
+    정보통신기획평가원>정기간행물...

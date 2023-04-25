@@ -1,14 +1,12 @@
-# Activities 
+# [W17 | 23.04.23 - 23.04.29 ]  
 
-## [W17 | 23.04.23 - 23.04.29 ]  
+## Development
 
-### Development
-
-### Algorithm Survey
+## Algorithm Survey
 - 차량용 FMCW 레이다 시스템 시뮬레이터 개발(2020 한국자동차공학회 춘계학술대회, 노태건, 남상욱)
 - 
 
-### Product Plan
+## Product Plan
 - 사내 현대차 담당 (전략영업 김상원Pro) 협의 내용 정리
   + A spl은 있어야 한다.
   + tear down을 통한 시스템 개선 point 수립, 구현 방안(나의 강점은 이것이다...) 수립

@@ -1,12 +1,12 @@
 # index
-1. [Quantum Computing](#Quantum-Computing)
+1. [Quantum Computing](#1-Quantum-Computing)
 2. [Metabus](#Metabus)
 3. [온디바이스 AI 기술](#온디바이스-AI-기술)
 
 ---
 <br/>
 
-# Quantum Computing
+# 1. Quantum Computing
 ※ 양자컴퓨터 제어 기술, 전자통신동향분석 제36권 제3호 2021년 6월  
       
 - 개념 및 응용  

@@ -8,7 +8,8 @@ layout: post
 # 1. Chirp Configuration on System Parameters
 - 시간에 따라 Tx 신호가 선형적으로 변하는 단일 톤 인 경우를 chirp 이라고 하며, chirp set로 프레임을 형성한다.
 > 레이더 처리를 위한 관찰 장으로 사용.
-
+- Fig. 1.은 single chirp과 timing params를, Fig. 2.는 chirp series로 구성된 frame structure를 보인다. 이 경우는 각각의 chirp은 10’s [µs] duration를 가지는 ‘Fast FMCW’ 변조를 나타낸다.
+  
 ![Fig. 1. FMCW Chirp: 단일 처프의 타이밍 매개변수 & Frame Structure: 처프와 프레임 간 프레임 구조](https://img-blog.csdnimg.cn/20210527154953328.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NhbGFkcGll,size_16,color_FFFFFF,t_70)
 
 ## 1.1. Measurement Range and Range Resolution

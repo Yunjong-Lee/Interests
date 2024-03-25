@@ -69,6 +69,14 @@ layout: post
 >   * $N_c$: Number of Chirp in a frame
 
 ## 1.3 Angular Range and Resolution
+- 2D 공간에 obj가 위치하기 위해서, 거리와 함께 angle of object가 요구된다.
+- angle 추정
+  + 지연된 수신 신호 $dsin(\theta)$로부터 위상 shift($\frac{2\pi d sin(\theta)}{\lambda}$) 발생
+  + 측정 가능한 angle은 d에 dependent함.
+  + $Max unambiguous angular range = sin^{-1}(\frac{\lambda}{2d})$
+    > - d : Spacing between receiver antennas
+    > - $\lambda$: wavelength
+    > - theoretically 가장 넓은 범위의 FOV를 가지려면 Ant. 간격은 $\frac{\lambda}{2}$이며, 이때 $±90°$의 시야 범위를 제공한다.
 
 # 2. Chirp Configurations for Common Applications
 

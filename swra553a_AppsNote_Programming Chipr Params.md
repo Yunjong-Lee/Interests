@@ -79,8 +79,26 @@ layout: post
     > - theoretically 가장 넓은 범위의 FOV를 가지려면 Ant. 간격은 $\frac{\lambda}{2}$이며, 이때 $±90°$의 시야 범위를 제공한다.
 
 # 2. Chirp Configurations for Common Applications
+- [Ref...](https://e2e.ti.com/support/sensors-group/sensors/f/sensors-forum/971468/awr1843-how-to-configure-the-chirp-setting)  
+![Chirp Configuration case of MRR](https://e2e.ti.com/cfs-file/__key/communityserver-discussions-components-files/1023/20210119_5F00_210615886.jpg)
 
-
+| Parameter | Units | LRR | MRR | SRR | USRR |
+| --- | --- | --- | --- | --- | --- |
+| Max unambiguous | range | m | 225 | 125 | 45 | 22.5 |
+| Sweep bandwidth | MHz | 300 | 540 | 750 | 1500 |
+| Ramp slope | MHz/us | 10 | 12 | 15 | 30 |
+| Inter-chirp duration | us | 8 | 10 | 12 | 50 |
+| Number of chirps | - | 256 | 128 | 128 | 128 |
+| Range resolution | m | 0.50 | 0.28 | 0.20 | 0.1 |
+| Chirp duration | us | 30 | 45 | 50 | 50 |
+| Max umambiguous relative velocity | kmph | 92.28 | 63.75 | 56.56 | 35.3 |
+| Max beat frequency | MHz | 15 | 10 | 4.5 | 4.5 |
+| ADC sampling rate (complex) | Msps | 16.67 | 11.11 | 5.00 | 5.00 |
+| Number of samples per chirp | | 500 | 500 | 250 | 250 |
+| Range FFT size | - | 512 | 512 | 256 | 256 | 
+| Frame time (total) | ms | 9.728 | 7.04 | 7.94 12.8| 
+| Frame time (active) | ms | 7.68 | 5.76 | 6.4 | 6.4| 
+| Radar data memory required | KB | 2048 | 1024 | 512 | 512 | 
 # 3. Configurable Chirp RAM and Chirp Profiles
 
 

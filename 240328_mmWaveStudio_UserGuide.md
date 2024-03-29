@@ -3,29 +3,17 @@ date: 2024-02-17 10:11:38
 layout: post
 ---
 
+# mmWaveStudio GUI  
+Radar API tab (mmWave device functionality verify) and Lua shell tab (execute LUA Script commands).
+
+## Radar API Tab  
+- mmWave device의 기능 확인  
+> ![Fig-01. Radar API Window](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZvFB7Zc6s-eMWeFCnPq4FSRZwP0pyWmX96A&usqp=CAU)
 
 
+- 레이더 신호의 처프, 서브프레임 및 프레임에 관한 기본  
+> ![Information of System Configuration](https://e2e.ti.com/resized-image/__size/1230x0/__key/communityserver-discussions-components-files/1023/TI_5F00_radar_5F00_API.png)
 
 
-
-
-rangeAzimuthHeatMap array로부터 
-
-
-
-
-### Inter Frame Processing
-
-|  |  |
-|--|--|
-| VitalSigns_DaaPathObj *obj_VS_zone_1; | VitalSigns_DaaPathObj을 가리키는 포인터 obj_VS_zone_1 |
-| obj_VS_zone_1 = &vitalsigns_dataPathObj_zone_1; | 포인터 obj_VS_zone_1에 vitalsigns_dataPathObj_zone_1의 address를 대입 |
-
-- oddemo_rangeAzimuthHeatMap의 0번째 배열의 address(&oddemo_rangeAzimuthHeatMap[0])를 oddemo_dataPathObj 구조체 변수 rangeAzimuthHeatMap(oddemo_dataPathObj.rangeAzimuthHeatMap)에 대입
-- oddemo_rangeAzimuthHeatMap data로 arc removal 수행(arc removal 수행 결과는 oddemo_rangeAzimuthHeatMap에 update)
-
-※ "/=" (할당연산자) : 저신을 오른쪽 값으로 나누어 몫을 대입
-
-
-
-
+## Lua Shell Tab  
+- used to execute LUA script commands, perform LUA operations

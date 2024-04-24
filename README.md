@@ -20,6 +20,8 @@
 - newTech.md  
 - swra553a_AppsNote_Programming Chipr Params.md  
 - white_paper_Dynamic Vital Sign estimation for Multiple Persons using mmWave technology.md  
-- white_paper_The fundamentals of millimeter-Wave Radar Sensors.md  
+- white_paper_The fundamentals of millimeter-Wave Radar Sensors.md
+- 240206_6GSensing-Communication_ConvergenceTechnology_Trends.md
+  
 
 

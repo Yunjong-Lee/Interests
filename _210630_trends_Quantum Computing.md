@@ -1,4 +1,4 @@
-# index
+# INDEX
 1. [Quantum Computing](#1-Quantum-Computing)
 
 ---  

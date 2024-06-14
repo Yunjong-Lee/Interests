@@ -210,7 +210,7 @@ Paper [Radar-Based Monitoring of Vital Signs: A Tutorial Overview](https://ieeex
 	+ displacement $\Delta(t)$ chest surface measured by the radar system  
 	$$\Delta R(t) ≜ R(t) - R_0 = \theta_b(t) + \theta_k(t) $$  
     $R(t), R_0$ : radar–chest distance at time t (distance in the absence of respiration)  
-    $\theta_b(t), \theta_h(t) : breath (heart) contribution to ΔR(t)  
+    $\theta_b(t), \theta_h(t)$ : breath (heart) contribution to ΔR(t)  
     + 다음 조건이 유지된다는 점이 중요함.  
        - a. 변위(\theta_b(t) (\theta_h(t)))는 주기적임  
        - b. 변위 ΔR(t)에 대한 $\theta_h(t)의 기여도는 $\theta_b(t)에 비해 적다.  

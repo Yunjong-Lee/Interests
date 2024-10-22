@@ -8,8 +8,8 @@ layout: post
 
 
 ### [Variance, 분산](https://ko.wikipedia.org/wiki/%EB%B6%84%EC%82%B0)
-${\displaystyle \operatorname {var} (X)}$ 또는 ${\displaystyle \sigma _{X}^{2}}$, 혹은 간단히 ${\displaystyle \sigma ^{2}\,}$으로 표현한다.  
-※ ${\displaystyle \sigma \,}$는 표준편차  
+${var} (X)$ 또는 $\sigma _{X}^2$, 혹은 간단히 $\sigma ^2$으로 표현한다.  
+※ $\sigma$는 표준편차  
 
 #### 개념
 - 변수 $X$가 기대값($\mu = E[X]$)으로부터 얼마나 떨어진 곳에 분포하는지 정도에 대한 수치화[^001]  

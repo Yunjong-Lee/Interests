@@ -13,7 +13,7 @@ ${var} (X)$ 또는 $\sigma _{X}^2$, 혹은 간단히 $\sigma ^2$으로 표현한
 
 #### 개념
 - 변수 $X$가 기대값($\mu = E[X]$)으로부터 얼마나 떨어진 곳에 분포하는지 정도에 대한 수치화[^001]  
-  + $Var(X) = E[ (X - \mu)^2 ] = \displaystyle \sum _{i=1} ^{n} p_{i} x_{i}$  
+  + $Var(X) = E[(X-\mu)^2] = \displaystyle \sum _{i=1} ^{n} p_{i} x_{i}$  
   + 기대값에 대해 확장해 보면,  
     ${\displaystyle {\begin{aligned} {Var} (X)&= {E} \left[(X- {E} [X])^{2}\right]\\[4pt]&= {E} \left[X^{2}-2X {E} [X]+ {E} [X]^{2}\right]\\[4pt]&= {E} \left[X^{2}\right] - 2 {E} [X] {E} [X]+ {E} [X]^{2}\\[4pt]&= {E} \left[X^{2}\right] - {E} [X]^{2}\end{aligned}}}$ [^002] 
 

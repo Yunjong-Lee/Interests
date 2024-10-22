@@ -22,6 +22,7 @@ ${\displaystyle \operatorname {var} (X)}$ 또는 ${\displaystyle \sigma _{X}^{2}
 - 모분산(population variance, 모집단의 분산) : 관측값에서 모 평균을 빼고 그것을 제곱한 값을 모두 더하여 전체 데이터 수 n으로 나눈 것  
 - 표본분산(sample variance, 표본의 분산) : 관측값에서 표본 평균을 빼고 제곱한 값을 모두 더한 것을 n-1로 나눈 것  
 
+- 물리학, 빛이 두 개 이상의 다른 매질을 통과할 때 그 경계면에서 고유 파장에 따라 나뉘는 현상
 
 #### 이산확률변수에서  
 

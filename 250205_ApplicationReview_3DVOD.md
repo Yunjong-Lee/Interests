@@ -63,13 +63,13 @@ flowchart TD
 
 
 - Pcount3DDemo_dssInitTask
-  + 'ptrProcChainCfg'에 gDPC_ObjectDetectionCfg (프로세스 체인 구조체 [^procChainCfg] ) 정의
+  + 'ptrProcChainCfg'에 gDPC_ObjectDetectionCfg (프로세스 체인 구조체 [^001] ) 정의
 
 - gDPC_ObjDetRangeHWACfg   
   : ~~objdetrangehwa.c in '..\common\dpc\objdetrangehwa\src' (Global used to register Object Detection DPC in DPM)~~  
   : 
 
-- DPC_ObjectDetection_execute [^DPC_ObjectDetection_execute]  
+- DPC_ObjectDetection_execute [^002]  
   + DPU_RangeProcHWA_process (in objdetrangehwa.c)
   + DPU_radarProcess_process
     - rangeProcHWA_dcRangeSignatureCompensation ("calib DC processing"이 enable 조건에서)
@@ -79,5 +79,5 @@ flowchart TD
 
 ---
 
-[^ procChainCfg]: objewctdetection.c in '..\common\dpc\capon3d\src'에 선언되어 있음  
-[^DPC_ObjectDetection_execute] : relation이 3곳 나타남, 파일은 동일
+[^001] : objewctdetection.c in '..\common\dpc\capon3d\src'에 선언되어 있음  
+[^002] : relation이 3곳 나타남, 파일은 동일  

@@ -85,17 +85,17 @@
 - baseline Prj 선정 test  
 1. Out Of Box demo :
  
-| Toolbox 		| EVK			| 		bin					| Execution	|  
-| ---			| ---			| ---						| ---		|  
-| ATB3.6.0		| 6843ISK_ODS	| OOB_6843_AOP  			|   X		|  
-|				| 	  	//		| OOB_6843_ISK(custom build)|   O		|  
-|				| 		//		| OOB_6843_ISK(pre build)	|   O		|  
+| Toolbox 	| EVK		| 		bin		| cfg					| Execution	|  
+| ---		| ---		| ---				| ---					| ---		|  
+| ATB3.6.0	| 6843ISK_ODS	| OOB_6843_AOP  		|					|   X		|  
+|		| 	//	| OOB_6843_ISK(custom build)	|					|   O		|  
+|		| 	//	| OOB_6843_ISK(pre build)	| 					|   O		|  
 
-2. Occupancy Detection :  
+2. Occupancy Detection (overhead_mount_occupancy) :  
 
-| Toolbox 		| EVK			| 		Bin					| cfg		| Execution	|
-| ---			| ---			| ---						| ---		|  ---		|
-| ATB3.0.0, overhead_mount_occupancy | 6843ISK_ODS | overhead_3d_vod_demo.bin (overhead_3d_vod_68xx_) | vod_6843_ods_overhead_5zones.cfg | O |
+| Toolbox 	| EVK		| 	Bin			| cfg					| Execution	|
+| ---		| ---		| ---				| ---					|  ---		|
+| ATB3.0.0 	| 6843ISK_ODS 	| overhead_3d_vod_demo.bin 	| vod_6843_ods_overhead_5zones.cfg 	| O 		|
 
 
 

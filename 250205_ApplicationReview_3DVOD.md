@@ -4,37 +4,35 @@ layout: post
 ---
 
 
-flow chart of 3D People Counting Demo Implementation using mmWave SDK components.  
-
-'''mermaid  
-
-    flowchart TD  
-        Host -->|Configuration| MSS  
-        MSS --> |Point Cloud/Tracking| Host  
-
-        subgraph App
-            direction LR
-
-            MSS
-            DSS
-        end
-
-        MSS --> mmWaveLib(mmWave Lib)
-        MSS --> DPM_M(DPM_mss)
-        DPM_M --> DPC_HWA(DPC:objdetrangehwa.c)
-        DPC_HWA --> DPU_RangeHWA
-        DPC_HWA --> DPU_Tracker
-
-        mmWaveLib --> mmWaveLink(mmWave Link)
-        mmWaveLink --> mmWaveFEM(mmWave Front End)
-        MSS --> DPU_Tracker
-
-        DSS --> DPM_d
-        DPM_d --> DPC_d(DPC:objectdetection.C)
-        DPC_d --> DPU(Low Level Processing channel: radarProcess.c)
-        DPU --> ConstantFalseAlarmRate
-        DPU --> DOA2D/caponBF
-'''  
+※ flow chart of 3D People Counting Demo Implementation using mmWave SDK components.  
+```mermaid  
+flowchart TD  
+    Host -->|Configuration| MSS  
+    MSS --> |Point Cloud/Tracking| Host  
+    
+    subgraph App
+        direction LR
+        MSS
+        DSS
+    end
+    
+    MSS --> mmWaveLib(mmWave Lib)
+    MSS --> DPM_M(DPM_mss)
+    DPM_M --> DPC_HWA(DPC:objdetrangehwa.c)
+    DPC_HWA --> DPU_RangeHWA
+    DPC_HWA --> DPU_Tracker
+    
+    mmWaveLib --> mmWaveLink(mmWave Link)
+    mmWaveLink --> mmWaveFEM(mmWave Front End)
+    MSS --> DPU_Tracker
+    
+    DSS --> DPM_d
+    DPM_d --> DPC_d(DPC:objectdetection.C)
+    DPC_d --> DPU(Low Level Processing channel: radarProcess.c)
+    DPU --> ConstantFalseAlarmRate
+    DPU --> DOA2D/caponBF
+```
+ 
 
 ## 1.1. Application (3D People Counting Application Level)  
 

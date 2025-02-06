@@ -69,7 +69,7 @@ flowchart TD
   : ~~objdetrangehwa.c in '..\common\dpc\objdetrangehwa\src' (Global used to register Object Detection DPC in DPM)~~  
   : 
 
-- DPC_ObjectDetection_execute [^002]  
+- DPC_ObjectDetection_execute 
   + DPU_RangeProcHWA_process (in objdetrangehwa.c)
   + DPU_radarProcess_process
     - rangeProcHWA_dcRangeSignatureCompensation ("calib DC processing"이 enable 조건에서)
@@ -79,5 +79,4 @@ flowchart TD
 
 ---
 
-[^001] : objewctdetection.c in '..\common\dpc\capon3d\src'에 선언되어 있음  
-[^002] : relation이 3곳 나타남, 파일은 동일  
+[^001]: objewctdetection.c   

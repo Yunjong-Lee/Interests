@@ -3,12 +3,13 @@ date: 2025-02-05 17:03:25
 layout: post
 ---
 
+# 3D People Counting Application
 
 ※ flow chart of 3D People Counting Demo Implementation using mmWave SDK components.  
 ```mermaid  
 flowchart TD  
-    Input --> |Configuration| MSS  
-    MSS --> |Point Cloud/Tracking| Output  
+    Host --> |Configuration| MSS  
+    MSS --> |Point Cloud/Tracking| Host  
     
     subgraph App
         direction LR
@@ -35,9 +36,10 @@ flowchart TD
  
 
 ## 1.1. Application (3D People Counting Application Level)  
-
-- Application is split between MSS and DSS. DSS and MSS call the DPM APIs through which they control the configuration and execution of DPCs.  
-- MSS also controls the radar front end, and communicates with the Host.  
+- Application is split between MSS and DSS.
+- MSS와 DSS는 DPC의 구성과 실행을 조종하는 DPM APIs를 호출한다.  
+- MSS는 radar front end를 컨트롤하고 호스트와 통신한다. 
+    
 ---  
 
 ## 1.2. mmWave Lib  
@@ -80,4 +82,5 @@ flowchart TD
 ---
 
 [^001]: objewctdetection.c   
+
 

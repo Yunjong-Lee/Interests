@@ -7,8 +7,8 @@ layout: post
 ※ flow chart of 3D People Counting Demo Implementation using mmWave SDK components.  
 ```mermaid  
 flowchart TD  
-    Host -->|Configuration| MSS  
-    MSS --> |Point Cloud/Tracking| Host  
+    Input --> |Configuration| MSS  
+    MSS --> |Point Cloud/Tracking| Output  
     
     subgraph App
         direction LR
@@ -80,3 +80,4 @@ flowchart TD
 ---
 
 [^001]: objewctdetection.c   
+

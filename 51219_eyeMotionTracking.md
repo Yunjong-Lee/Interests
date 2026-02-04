@@ -8,10 +8,12 @@ layout: post
 - recorded data는 
   + SA5AU (Driving Assistant Professional) 
     * 정의: BMW의 '드라이빙 어시스턴트 프로페셔널' 패키지 코드
-      기능: 스톱앤고(Stop&Go) 기능이 포함된 액티브 크루즈 컨트롤, 차선 유지 어시스턴트, 스티어링 및 차선 제어 어시스턴트 등 자율주행 보조 기능 제공
-  + SA5AR (Traffic Jam Assistant)
+    * 기능: 스톱앤고(Stop&Go) 기능이 포함된 액티브 크루즈 컨트롤, 차선 유지 어시스턴트, 스티어링 및 차선 제어 어시스턴트 등 자율주행 보조 기능 제공
+      
+  + SA5AR (Traffic Jam Assistant)  
     * 정의: '트래픽 잼 어시스턴트' 즉, 정체 구간 주행 지원 기능 코드
-    * 기능: 고속도로나 정체된 도로(보통 60km/h 미만)에서 스티어링 휠을 직접 잡지 않아도 운전자의 시선을 감지하여 차로를 유지 기능. SA5AU 패키지에 포함되거나 연동되는 경우가 많습니다. 
+    * 기능: 고속도로나 정체된 도로(보통 60km/h 미만)에서 스티어링 휠을 직접 잡지 않아도 운전자의 시선을 감지하여 차로를 유지 기능. SA5AU 패키지에 포함되거나 연동되는 경우가 많다.
+      
   + SAS (SAS Control Unit)
     * 정의: BMW의 주행 지원 시스템을 통합 제어하는 'SPECIAL CONFIGURATION SYSTEM' 또는 ECU  
     * 역할: 사이드 레이더 센서 및 드라이버 카메라 시스템(DCS) 등에서 오는 데이터를 처리하고 5AU/5AR 기능을 구동하기 위한 모듈
@@ -337,6 +339,7 @@ Detection of eye blinking using Doppler sensor with principal component analysis
 ---
 
 ###
+
 
 
 

@@ -24,12 +24,11 @@ layout: post
 
 ※ [Magna's DMS](https://www.newsweek.com/magnas-driver-monitoring-system-can-tell-when-youre-phone-1712612)
 
-
 ![new Magna driver monitor](https://assets.newsweek.com/wp-content/uploads/2025/08/2051111-magna-driver-monitoring-system.jpg?w=1600&quality=80&webp=1)  
 
 ![Magna Driver Monitoring System in the rearview mirror](https://assets.newsweek.com/wp-content/uploads/2025/08/2051115-magna-driver-monitoring-system.jpg?w=1600&quality=80&webp=1)
 
-
+---
 
 # DMS Algorithms  
 - DMS를 위해서는 Vital sign estimation algorithm 이외에 "head position"과 "gaze"에 대한 estimation algorithm이 필요하다.
@@ -41,6 +40,8 @@ layout: post
   + One‐shot learning‐based driver's head movement identification using a millimetre-wave radar sensor
   + Head Pose Estimation via mmWave Radar
   + Human Multi-Activities Classification Using mmWave Radar: Feature Fusion in Time-Domain and PCANet
+
+---
 
 # [One‐shot learning‐based driver's head movement identification using a millimetre-wave radar sensor](https://scholarworks.bwise.kr/cau/bitstream/2019.sw.cau/70053/1/One-shot%20learning-based%20driver%27s%20head%20movement%20identification%20using%20a%20millimetre-wave%20radar%20sensor.pdf), IET, 2021  
 
@@ -62,8 +63,6 @@ layout: post
   * Zhang, A., et al.: Limited data rolling bearing fault diagnosis with few‐shot learning. IEEE Access 7, 110895–110904 (2019)
   * Chauhan, J., Nathani, D., Kaul, M.: Few‐shot learning on graphs via super‐classes based on graph spectral measures. ArXiv:2002.12815(2020)
   * Tuyet‐Doan, V.‐N., et al.: One‐shot learning for partial discharge diagnosis using ultra‐high‐frequency sensor in gas‐insulated switchgear. Sensors 20(19), 5562 (2020). https://www.mdpi.com/1424‐8220/20/19/5562  
-
---- 
 
 ## 2. Signal analysis for the FMCW radar system   
 : signal analysis  
@@ -339,6 +338,7 @@ Detection of eye blinking using Doppler sensor with principal component analysis
 ---
 
 ###
+
 
 
 
